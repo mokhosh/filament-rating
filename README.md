@@ -26,10 +26,30 @@ php artisan filament-rating:install
 You can add a rating field to your forms like this:
 
 ```php
-use Mokhosh\FilamentRating\Forms\Rating;
+use Mokhosh\FilamentRating\Components\Rating;
 
 $form->schema([
     Rating::make(),
+]);
+```
+
+You can add a rating column to your tables like this:
+
+```php
+use Mokhosh\FilamentRating\Columns\RatingColumn;
+
+$table->schema([
+    RatingColumn::make(),
+]);
+```
+
+You can add a rating entry to your infolists like this:
+
+```php
+use Mokhosh\FilamentRating\Entries\RatingEntry;
+
+$infolist->schema([
+    RatingEntry::make(),
 ]);
 ```
 
