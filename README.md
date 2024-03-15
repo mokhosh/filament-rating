@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mokhosh/filament-rating.svg?style=flat-square)](https://packagist.org/packages/mokhosh/filament-rating)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/mokhosh/filament-rating.svg?style=flat-square)](https://packagist.org/packages/mokhosh/filament-rating)
 
 Add beautiful and customizable rating fields and columns to Filament forms and tables.
