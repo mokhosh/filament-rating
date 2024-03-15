@@ -5,9 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mokhosh/filament-rating/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mokhosh/filament-rating/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/mokhosh/filament-rating.svg?style=flat-square)](https://packagist.org/packages/mokhosh/filament-rating)
 
-
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Add beautiful and customizable rating fields and columns to Filament forms and tables.
 
 ## Installation
 
@@ -17,37 +15,22 @@ You can install the package via composer:
 composer require mokhosh/filament-rating
 ```
 
-You can publish and run the migrations with:
+Publish the assets so the styles are correct:
 
 ```bash
-php artisan vendor:publish --tag="filament-rating-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-rating-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-rating-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
+php artisan filament-rating:install
 ```
 
 ## Usage
 
+You can add a rating field to your forms like this:
+
 ```php
-$filamentRating = new Mokhosh\FilamentRating();
-echo $filamentRating->echoPhrase('Hello, Mokhosh!');
+use Mokhosh\FilamentRating\Forms\Rating;
+
+$form->schema([
+    Rating::make(),
+]);
 ```
 
 ## Testing
