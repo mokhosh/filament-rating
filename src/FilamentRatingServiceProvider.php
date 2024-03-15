@@ -10,11 +10,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use Mokhosh\FilamentRating\Commands\FilamentRatingCommand;
+use Mokhosh\FilamentRating\Testing\TestsFilamentRating;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Mokhosh\FilamentRating\Commands\FilamentRatingCommand;
-use Mokhosh\FilamentRating\Testing\TestsFilamentRating;
 
 class FilamentRatingServiceProvider extends PackageServiceProvider
 {
