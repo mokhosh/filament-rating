@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mokhosh\\FilamentRating\\": "src/",
+            "Mokhosh\\FilamentRating\\": "src/"
         }
     },
     "autoload-dev": {
