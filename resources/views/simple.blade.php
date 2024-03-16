@@ -9,7 +9,7 @@
                 type="radio"
                 value="{{ $value }}"
                 id="star-{{ $value }}"
-                class="hidden peer"
+                class="!hidden peer"
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $getStatePath() }}"
                 wire:loading.attr="disabled"
             />
