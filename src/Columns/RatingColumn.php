@@ -4,28 +4,15 @@ namespace Mokhosh\FilamentRating\Columns;
 
 use Filament\Tables\Columns\Column;
 use Mokhosh\FilamentRating\Concerns\HasStars;
-use Mokhosh\FilamentRating\RatingTheme;
+use Mokhosh\FilamentRating\Concerns\HasThemes;
 
 class RatingColumn extends Column
 {
     use HasStars;
-
-    protected RatingTheme $theme = RatingTheme::Simple;
+    use HasThemes;
 
     public function getView(): string
     {
         return $this->getTheme()->getView() . '.column';
-    }
-
-    public function theme(RatingTheme $theme): static
-    {
-        $this->theme = $theme;
-
-        return $this;
-    }
-
-    public function getTheme(): RatingTheme
-    {
-        return $this->theme;
     }
 }
