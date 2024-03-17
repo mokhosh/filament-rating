@@ -19,6 +19,21 @@
         'warning' => 'group-hover:!text-warning-500',
         default => "group-hover:!text-{$color}-500",
     };
+    $size = $getSize();
+    $sizeClass = match ($size) {
+        'xs' => 'w-3 h-3',
+        'sm' => 'w-4 h-4',
+        'md' => 'w-6 h-6',
+        'lg' => 'w-8 h-8',
+        'xl' => 'w-10 h-10',
+    };
+    $halfSizeClass = match ($size) {
+        'xs' => 'w-[.375rem] h-3',
+        'sm' => 'w-2 h-4',
+        'md' => 'w-3 h-6',
+        'lg' => 'w-4 h-8',
+        'xl' => 'w-5 h-10',
+    };
 @endphp
 
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
@@ -40,7 +55,7 @@
                     "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-c-no-symbol" class="w-6 h-6 pointer-events-none" />
+                <x-icon name="heroicon-c-no-symbol" class="{{ $sizeClass }} pointer-events-none" />
             </label>
         @endif
 
@@ -48,11 +63,11 @@
             <label
                 for="star-{{ $value - 0.5 }}"
                 @class([
-                    "shrink-0 relative w-3 h-6 overflow-hidden {$colorClass} peer-checked:text-slate-300",
+                    "shrink-0 relative {$halfSizeClass} overflow-hidden {$colorClass} peer-checked:text-slate-300",
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="absolute start-0 w-6 h-6 pointer-events-none" />
+                <x-icon name="heroicon-s-star" class="absolute start-0 {{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input
@@ -68,11 +83,11 @@
             <label
                 for="star-{{ $value }}"
                 @class([
-                    "shrink-0 relative w-3 h-6 overflow-hidden {$colorClass} peer-checked:text-slate-300",
+                    "shrink-0 relative {$halfSizeClass} overflow-hidden {$colorClass} peer-checked:text-slate-300",
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="absolute end-0 w-6 h-6 pointer-events-none" />
+                <x-icon name="heroicon-s-star" class="absolute end-0 {{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input
