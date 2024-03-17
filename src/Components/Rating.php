@@ -14,7 +14,7 @@ class Rating extends Field
 
     public function getView(): string
     {
-        return $this->getTheme()->getView() . '-component';
+        return $this->getTheme()->getView() . '.component';
     }
 
     public function theme(RatingTheme $theme): static
