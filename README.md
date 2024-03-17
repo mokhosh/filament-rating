@@ -7,9 +7,9 @@
 
 Add beautiful and customizable rating fields and columns to Filament forms and tables.
 
-![Rating form component](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-form.png | width=200)
-![Rating table column](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-table.png | width=200)
-![Rating infolist entry](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-infolist.png | width=200)
+![Rating form component](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-form.png)
+![Rating table column](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-table.png)
+![Rating infolist entry](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-rating-infolist.png)
 
 ## Installation
 
