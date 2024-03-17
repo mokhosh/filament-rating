@@ -19,6 +19,14 @@
         'warning' => 'group-hover:!text-warning-500',
         default => "group-hover:!text-{$color}-500",
     };
+    $size = $getSize();
+    $sizeClass = match ($size) {
+        'xs' => 'w-3 h-3',
+        'sm' => 'w-4 h-4',
+        'md' => 'w-6 h-6',
+        'lg' => 'w-8 h-8',
+        'xl' => 'w-10 h-10',
+    };
 @endphp
 
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
@@ -40,7 +48,7 @@
                     "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-c-no-symbol" class="w-6 h-6 pointer-events-none" />
+                <x-icon name="heroicon-c-no-symbol" class="{{ $sizeClass }} pointer-events-none" />
             </label>
         @endif
 
@@ -52,7 +60,7 @@
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
                 ])
             >
-                <x-icon name="heroicon-s-star" class="w-6 h-6 pointer-events-none" />
+                <x-icon name="heroicon-s-star" class="{{ $sizeClass }} pointer-events-none" />
             </label>
 
             <input

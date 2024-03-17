@@ -10,6 +10,14 @@
         'warning' => 'text-warning-500',
         default => "text-{$color}-500",
     };
+    $size = $getSize();
+    $sizeClass = match ($size) {
+        'xs' => 'w-3 h-3',
+        'sm' => 'w-4 h-4',
+        'md' => 'w-6 h-6',
+        'lg' => 'w-8 h-8',
+        'xl' => 'w-10 h-10',
+    };
 @endphp
 
 <div class="flex">
@@ -20,7 +28,7 @@
                 "text-danger-500" => $state === 0,
             ])
         >
-            <x-icon name="heroicon-c-no-symbol" class="w-6 h-6 pointer-events-none" />
+            <x-icon name="heroicon-c-no-symbol" class="{{ $sizeClass }} pointer-events-none" />
         </div>
     @endif
 
@@ -31,7 +39,7 @@
                 $colorClass => $state >= $value,
             ])
         >
-            <x-icon name="heroicon-s-star" class="w-6 h-6 pointer-events-none" />
+            <x-icon name="heroicon-s-star" class="{{ $sizeClass }} pointer-events-none" />
         </div>
     @endforeach
 </div>
