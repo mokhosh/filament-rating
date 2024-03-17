@@ -4,12 +4,12 @@ namespace Mokhosh\FilamentRating\Entries;
 
 use Filament\Infolists\Components\Entry;
 use Mokhosh\FilamentRating\Concerns\HasStars;
-use Mokhosh\FilamentRating\Concerns\HasThemes;
+use Mokhosh\FilamentRating\Concerns\HasTheme;
 
 class RatingEntry extends Entry
 {
     use HasStars;
-    use HasThemes;
+    use HasTheme;
 
     public function getView(): string
     {

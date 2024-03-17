@@ -4,12 +4,12 @@ namespace Mokhosh\FilamentRating\Columns;
 
 use Filament\Tables\Columns\Column;
 use Mokhosh\FilamentRating\Concerns\HasStars;
-use Mokhosh\FilamentRating\Concerns\HasThemes;
+use Mokhosh\FilamentRating\Concerns\HasTheme;
 
 class RatingColumn extends Column
 {
     use HasStars;
-    use HasThemes;
+    use HasTheme;
 
     public function getView(): string
     {

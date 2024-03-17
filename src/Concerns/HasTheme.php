@@ -4,7 +4,7 @@ namespace Mokhosh\FilamentRating\Concerns;
 
 use Mokhosh\FilamentRating\RatingTheme;
 
-trait HasThemes
+trait HasTheme
 {
     protected RatingTheme $theme = RatingTheme::Simple;
 
