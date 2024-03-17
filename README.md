@@ -85,6 +85,16 @@ $form->schema([
 ]);
 ```
 
+## Customizing The Size
+
+You can customize the size of the stars. The accepted values are: `xs`, `sm`, `md`, `lg` and `xl`:
+
+```php
+$form->schema([
+    Rating::make()->size('sm'),
+]);
+```
+
 ## Customizing Colors
 
 You can customize the color of the stars by choosing one of the Filament theme colors.
