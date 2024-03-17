@@ -85,6 +85,18 @@ $form->schema([
 ]);
 ```
 
+## Customizing Colors
+
+You can customize the color of the stars by choosing one of the Filament theme colors.
+
+Accepted values are `danger`, `gray`, `info`, `primary`, `success` and `warning`:
+
+```php
+$form->schema([
+    Rating::make()->color('success'),
+]);
+```
+
 ## Testing
 
 ```bash
