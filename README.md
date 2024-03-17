@@ -7,6 +7,10 @@
 
 Add beautiful and customizable rating fields and columns to Filament forms and tables.
 
+![Rating form component](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-kanban-form.png)
+![Rating table column](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-kanban-table.png)
+![Rating infolist entry](https://raw.githubusercontent.com/mokhosh/filament-rating/main/images/mokhosh-filament-kanban-infolist.png)
+
 ## Installation
 
 You can install the package via composer:
