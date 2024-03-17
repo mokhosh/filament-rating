@@ -15,7 +15,12 @@ trait HasStars
         return $this;
     }
 
-    public function getStars(): array
+    public function getStars(): int
+    {
+        return $this->stars;
+    }
+
+    public function getStarsArray(): array
     {
         return range(1, $this->stars);
     }

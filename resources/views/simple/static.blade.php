@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    @foreach ($getStars() as $value)
+    @foreach ($getStarsArray() as $value)
         <div
             @class([
                 "text-slate-300" => $state < $value,

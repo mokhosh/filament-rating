@@ -23,7 +23,7 @@
             </label>
         @endif
 
-        @foreach ($getStars() as $value)
+        @foreach ($getStarsArray() as $value)
             <label
                 for="star-{{ $value }}"
                 @class([

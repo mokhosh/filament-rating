@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    @foreach ($getStars() as $value)
+    @foreach ($getStarsArray() as $value)
         <div
             @class([
                 "shrink-0 relative w-3 h-6 overflow-hidden",
