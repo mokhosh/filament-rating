@@ -2,6 +2,10 @@
 
 All notable changes to `filament-rating` will be documented in this file.
 
+## v0.2.1 - 2024-03-17
+
+Fix disabled state always being true.
+
 ## v0.1.0 - 2024-03-17
 
 Initial release.
