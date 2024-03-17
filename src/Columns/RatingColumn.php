@@ -13,6 +13,6 @@ class RatingColumn extends Column
 
     public function getView(): string
     {
-        return $this->getTheme()->getView() . '.column';
+        return $this->getTheme()->getView() . '.static';
     }
 }
