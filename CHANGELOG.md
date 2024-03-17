@@ -2,6 +2,12 @@
 
 All notable changes to `filament-rating` will be documented in this file.
 
+## v1.0.0 - 2024-03-17
+
+- Add half star theme
+- Add color customization
+- Add size customization
+
 ## v0.2.1 - 2024-03-17
 
 Fix disabled state always being true.
