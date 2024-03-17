@@ -6,7 +6,7 @@
                 value="0"
                 id="star-0"
                 class="!hidden peer"
-                @disabled($isDisabled)
+                @disabled($isDisabled())
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $getStatePath() }}"
             >
 
@@ -14,7 +14,7 @@
                 for="star-0"
                 @class([
                     "text-slate-300 peer-checked:text-danger-500",
-                    "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled,
+                    "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled(),
                 ])
             >
                 <x-icon name="heroicon-c-no-symbol" class="w-6 h-6 pointer-events-none" />
@@ -26,7 +26,7 @@
                 for="star-{{ $value }}"
                 @class([
                     "text-primary-500 peer-checked:text-slate-300",
-                    "group-hover:!text-primary-500 peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
+                    "group-hover:!text-primary-500 peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled(),
                 ])
             >
                 <x-icon name="heroicon-s-star" class="w-6 h-6 pointer-events-none" />
@@ -38,7 +38,7 @@
                 id="star-{{ $value }}"
                 class="!hidden peer"
                 wire:loading.attr="disabled"
-                @disabled($isDisabled)
+                @disabled($isDisabled())
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $getStatePath() }}"
             >
         @endforeach
