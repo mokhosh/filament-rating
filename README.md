@@ -53,6 +53,38 @@ $infolist->schema([
 ]);
 ```
 
+## Themes
+
+You can choose the theme like this:
+
+```php
+use Mokhosh\FilamentRating\RatingTheme;
+
+$form->schema([
+    Rating::make()->theme(RatingTheme::Simple),
+]);
+```
+
+## Maximum Stars
+
+You can change the number of total stars like this:
+
+```php
+$form->schema([
+    Rating::make()->stars(10),
+]);
+```
+
+## Allowing Zero Stars
+
+If you want to allow zero stars to be chosen, you can do so like this:
+
+```php
+$form->schema([
+    Rating::make()->allowZero(),
+]);
+```
+
 ## Testing
 
 ```bash
