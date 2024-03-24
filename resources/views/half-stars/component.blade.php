@@ -1,4 +1,5 @@
 @php
+    $id = $getId();
     $isDisabled = $isDisabled();
     $color = $getColor();
     $colorClass = match ($color) {
@@ -42,14 +43,14 @@
             <input
                 type="radio"
                 value="0"
-                id="{{ $field->getName() }}-star-0"
+                id="{{ $id }}-star-0"
                 class="!hidden peer"
                 @disabled($isDisabled)
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $getStatePath() }}"
             >
 
             <label
-                for="{{ $field->getName() }}-star-0"
+                for="{{ $id }}-star-0"
                 @class([
                     "text-slate-300 peer-checked:text-danger-500",
                     "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled,
@@ -61,7 +62,7 @@
 
         @foreach ($getStarsArray() as $value)
             <label
-                for="{{ $field->getName() }}-star-{{ $value - 0.5 }}"
+                for="{{ $id }}-star-{{ $value - 0.5 }}"
                 @class([
                     "shrink-0 relative {$halfSizeClass} overflow-hidden {$colorClass} peer-checked:text-slate-300",
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
@@ -73,7 +74,7 @@
             <input
                 type="radio"
                 value="{{ $value - 0.5 }}"
-                id="{{ $field->getName() }}-star-{{ $value - 0.5 }}"
+                id="{{ $id }}-star-{{ $value - 0.5 }}"
                 class="!hidden peer"
                 wire:loading.attr="disabled"
                 @disabled($isDisabled)
@@ -81,7 +82,7 @@
             >
 
             <label
-                for="{{ $field->getName() }}-star-{{ $value }}"
+                for="{{ $id }}-star-{{ $value }}"
                 @class([
                     "shrink-0 relative {$halfSizeClass} overflow-hidden {$colorClass} peer-checked:text-slate-300",
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
@@ -93,7 +94,7 @@
             <input
                 type="radio"
                 value="{{ $value }}"
-                id="{{ $field->getName() }}-star-{{ $value }}"
+                id="{{ $id }}-star-{{ $value }}"
                 class="!hidden peer"
                 wire:loading.attr="disabled"
                 @disabled($isDisabled)
