@@ -1,4 +1,5 @@
 @php
+    $id = $getId();
     $isDisabled = $isDisabled();
     $color = $getColor();
     $colorClass = match ($color) {
@@ -35,14 +36,14 @@
             <input
                 type="radio"
                 value="0"
-                id="star-0"
+                id="{{ $id }}-star-0"
                 class="!hidden peer"
                 @disabled($isDisabled)
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $getStatePath() }}"
             >
 
             <label
-                for="star-0"
+                for="{{ $id }}-star-0"
                 @class([
                     "text-slate-300 peer-checked:text-danger-500",
                     "group-hover:!text-slate-300 peer-hover:!text-danger-500 cursor-pointer" => ! $isDisabled,
@@ -54,7 +55,7 @@
 
         @foreach ($getStarsArray() as $value)
             <label
-                for="star-{{ $value }}"
+                for="{{ $id }}-star-{{ $value }}"
                 @class([
                     "{$colorClass} peer-checked:text-slate-300",
                     "{$groupHoverColorClass} peer-hover:!text-slate-300 cursor-pointer" => ! $isDisabled,
@@ -66,7 +67,7 @@
             <input
                 type="radio"
                 value="{{ $value }}"
-                id="star-{{ $value }}"
+                id="{{ $id }}-star-{{ $value }}"
                 class="!hidden peer"
                 wire:loading.attr="disabled"
                 @disabled($isDisabled)
