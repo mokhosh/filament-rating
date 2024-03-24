@@ -19,4 +19,9 @@ class Rating extends Field
     {
         return $this->getTheme()->getView() . '.component';
     }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }
