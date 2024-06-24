@@ -83,8 +83,6 @@ $form->schema([
 ]);
 ```
 
-The maximum stars default is `5`.
-
 ## Allowing Zero Stars
 
 If you want to allow zero stars to be chosen, you can do so like this:
