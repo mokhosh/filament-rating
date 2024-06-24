@@ -59,7 +59,9 @@ $infolist->schema([
 
 ## Themes
 
-You can choose the theme like this:
+You can choose the theme.
+The default value is: `RatingTheme::Simple`.
+The accepted values are: `RatingTheme::Simple`, `RatingTheme::HalfStars`, like this:
 
 ```php
 use Mokhosh\FilamentRating\RatingTheme;
@@ -71,7 +73,9 @@ $form->schema([
 
 ## Maximum Stars
 
-You can change the number of total stars like this:
+You can change the number of total stars.
+The default value is `5`.
+The accepted values are number, like this:
 
 ```php
 $form->schema([
@@ -91,7 +95,9 @@ $form->schema([
 
 ## Customizing The Size
 
-You can customize the size of the stars. The accepted values are: `xs`, `sm`, `md`, `lg` and `xl`:
+You can customize the size of the stars. 
+The default value is `md`.
+The accepted values are: `xs`, `sm`, `md`, `lg` and `xl`, like this:
 
 ```php
 $form->schema([
@@ -102,8 +108,8 @@ $form->schema([
 ## Customizing Colors
 
 You can customize the color of the stars by choosing one of the Filament theme colors.
-
-Accepted values are `danger`, `gray`, `info`, `primary`, `success` and `warning`:
+The default value is `primary`.
+The accepted values are: `danger`, `gray`, `info`, `primary`, `success` and `warning`, like this:
 
 ```php
 $form->schema([
