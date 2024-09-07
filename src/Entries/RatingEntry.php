@@ -17,6 +17,11 @@ class RatingEntry extends Entry
 
     public function getView(): string
     {
+        return 'filament-rating::wrappers.entry';
+    }
+
+    public function getThemeView(): string
+    {
         return $this->getTheme()->getView() . '.static';
     }
 }
