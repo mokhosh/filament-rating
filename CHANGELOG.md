@@ -2,6 +2,12 @@
 
 All notable changes to `filament-rating` will be documented in this file.
 
+## v1.3.0 - 2024-09-16
+
+Add table column wrapper view
+
+**Full Changelog**: https://github.com/mokhosh/filament-rating/compare/v1.2.0...v1.3.0
+
 ## v1.2.0 - 2024-09-07
 
 ### What's Changed
