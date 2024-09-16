@@ -17,6 +17,11 @@ class RatingColumn extends Column
 
     public function getView(): string
     {
+        return 'filament-rating::wrappers.column';
+    }
+
+    public function getThemeView(): string
+    {
         return $this->getTheme()->getView() . '.static';
     }
 }
