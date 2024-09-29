@@ -25,15 +25,8 @@ class FilamentRatingServiceProvider extends PackageServiceProvider
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
-                    ->publishConfigFile()
                     ->askToStarRepoOnGitHub('mokhosh/filament-rating');
             });
-
-        $configFileName = $package->shortName();
-
-        if (file_exists($package->basePath("/../config/{$configFileName}.php"))) {
-            $package->hasConfigFile();
-        }
 
         if (file_exists($package->basePath('/../resources/lang'))) {
             $package->hasTranslations();
