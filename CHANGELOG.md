@@ -2,6 +2,10 @@
 
 All notable changes to `filament-rating` will be documented in this file.
 
+## v1.4.1 - 2024-09-29
+
+**Full Changelog**: https://github.com/mokhosh/filament-rating/compare/v1.4.0...v1.4.1
+
 ## v1.4.0 - 2024-09-22
 
 Add column wrapper
