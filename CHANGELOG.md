@@ -2,6 +2,23 @@
 
 All notable changes to `filament-rating` will be documented in this file.
 
+## v2.0.0 - 2025-08-21
+
+### What's Changed
+
+* Support Filament 4 including Tailwind CSS 4 by @mohamedsabil83 in https://github.com/mokhosh/filament-rating/pull/21
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot[bot] in https://github.com/mokhosh/filament-rating/pull/14
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot[bot] in https://github.com/mokhosh/filament-rating/pull/15
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/mokhosh/filament-rating/pull/16
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/mokhosh/filament-rating/pull/19
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/mokhosh/filament-rating/pull/20
+
+### New Contributors
+
+* @mohamedsabil83 made their first contribution in https://github.com/mokhosh/filament-rating/pull/21
+
+**Full Changelog**: https://github.com/mokhosh/filament-rating/compare/v1.4.1...v2.0.0
+
 ## v1.4.1 - 2024-09-29
 
 **Full Changelog**: https://github.com/mokhosh/filament-rating/compare/v1.4.0...v1.4.1
